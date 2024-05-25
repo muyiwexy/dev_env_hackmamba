@@ -6,7 +6,7 @@ async function getData(): Promise<Details[]> {
   return [
     {
       member_number: "M12345",
-      created_at: "2023-10-04T12:30:00", // Example ISO 8601 date time string
+      created_at: "2023-10-04T12:30:00",
       name: "John Doe",
       email: "john.doe@example.com",
       phone_number: "+1234567890",
