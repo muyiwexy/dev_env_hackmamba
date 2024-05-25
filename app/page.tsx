@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Details, columns } from "./columns";
 import { DataTable } from "./data-tables";
+import { AddDetailsDialog } from "./add_details_dialog";
 
 async function getData(): Promise<Details[]> {
   return [
@@ -45,6 +46,7 @@ export default async function Home() {
         </div>
       </div>
       <div className="container">
+        <AddDetailsDialog />
         <DataTable columns={columns} data={data} />
       </div>
     </main>
